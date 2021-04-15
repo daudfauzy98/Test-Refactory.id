@@ -1,0 +1,4 @@
+2021/04/15 08:05:08 Success: POST http://91/ {counter: 1, X-RANDOM: 93f9h3dx}
+2021/04/15 08:06:13 Success: POST http://[::1]:11704/ {counter: 1, X-RANDOM: 93f9h3dx}
+2021/04/15 12:37:33 Success: POST http://::1/ {counter: 1, X-RANDOM: 93f9h3dx}
+2021/04/15 12:41:47 Success: POST http://::1/ {"counter": 1, "X-RANDOM": "93f9h3dx"}
