@@ -15,21 +15,21 @@ func main() {
 	wg := &sync.WaitGroup{}
 	mu := &sync.Mutex{}
 
-	/*wg.Add(1)
-	go func() {
-		for i := 0; i < N; i++ {
+	// Program salah, len(m) = 1
+	/*wg.Add(N)
+	for i := 0; i < N; i++ {
+		go func() {
+			defer wg.Done()
 			mu.Lock()
 			m[i] = i
 			mu.Unlock()
-		}
-		wg.Done()
-	}()
-
+		}()
+	}
 	wg.Wait()
 	println(len(m))*/
 
+	// Program benar, len(m) = 10
 	wg.Add(N)
-
 	go func() {
 		for i := 0; i < N; i++ {
 			defer wg.Done()
